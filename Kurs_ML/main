@@ -1,0 +1,17 @@
+import os
+from sklearn.datasets import load_iris
+
+iris = load_iris()
+
+# check what we have
+iris.keys()
+iris['DESCR'][:193]
+
+""" interesting data """
+# iris['target_names']
+# iris['feature_names']
+# iris['data']
+# iris['data'].shape # rows x columns
+
+
+iris['data'][:4] # show rows till 4-th
