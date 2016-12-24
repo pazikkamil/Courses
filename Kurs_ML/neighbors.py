@@ -6,6 +6,7 @@ import numpy as np
 
 iris = load_iris()
 
+# type(iris) == bunches
 # check what we have
 iris.keys()
 iris['DESCR'][:193]
@@ -40,6 +41,6 @@ X_new.shape
 # making predictions
 
 prediction = knn.predict(X_new)
-prediction
+
 
 iris['target_names'][prediction]
