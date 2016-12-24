@@ -1,5 +1,6 @@
 import os
 from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
 
 iris = load_iris()
 
@@ -15,3 +16,7 @@ iris['DESCR'][:193]
 
 
 iris['data'][:4] # show rows till 4-th
+
+
+# it shuffles data using pseudo random num generator before spliting
+X_train, X_test, y_train, y_test = train_test_split(iris['data'], iris['target'], random_state=0)
