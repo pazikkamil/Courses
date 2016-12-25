@@ -9,16 +9,30 @@ We know the structure and outcome. We split data into training and test data
 |:---------------------:|:---------------------------|
 | **Methods**             |classification, regression, svm|
 | **Validation methods**  |cross validation                          |
-| **Algorithms**          |Decision tree, C4.5, K-NN             |
+| **Algorithms**          |Decision tree, C4.5, K-NN,\ K-means,Hierarchical clust., Density based clust |
 
 ### Classification
 Classify labeled data
 
 K-Nearest Neighbors - > A classification model
 
+> K-Nearest Neighbors - A classification model
+> -- <cite>[Big Data University][1]</cite>
+
+![Knn method]
+(http://mars.wiwi.hu-berlin.de/mediawiki/teachwiki/images/e/e2/Hl_knn.JPG)
+
+[1]:https://courses.bigdatauniversity.com
+
 Examples of classifications
 ![Image of classification]
 (http://3.bp.blogspot.com/-HFPsQbmRQZQ/UGNvH_t06jI/AAAAAAAAD_Y/G7XYOTVa2mM/s1600/Screen+Shot+2012-09-26+at+2.08.25+PM.png)
+
+![Image of knn]
+(https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm#/media/File:KnnClassification.svg)
+
+![video]
+(https://www.youtube.com/watch?v=hHuuebUCu2M)
 
 ### Regression
 Predicting trends using previous labeled data
@@ -41,6 +55,7 @@ We don't know much about our data, don't know the outcomes
 * Deals with unlabeled data
 * More complex algorithms than supervised learning
 * Fewer tests than supervised
+* algorithms utilizes centroids
 
 | Unsupervised learning |           |
 |:---------------------:|:----------|
