@@ -26,6 +26,12 @@ To do
 Look at skulls_epoch
 
 ## Unsupervised learning
-We dont know much about our data
+We don't know much about our data
+
+* More complex ==algorithms== than supervised learning
+
+| Unsupervised learning |           |
+|:---------------------:|:----------|
+| **Methods**           ||
 
 
