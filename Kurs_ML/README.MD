@@ -9,7 +9,7 @@ We know the structure and outcome
 
 
 ![Image of classification]
-(https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwiEnJzAiI7RAhVH_iwKHYqXA1wQjRwIBw&url=http%3A%2F%2Fstat-mzhong.blogspot.com%2F2012%2F09%2Fpython-linear-discriminant-analysis.html&psig=AFQjCNEi7sb0Sez-IRRxj_1VvYqtm14LKA&ust=1482711295461886)
+(http://3.bp.blogspot.com/-HFPsQbmRQZQ/UGNvH_t06jI/AAAAAAAAD_Y/G7XYOTVa2mM/s1600/Screen+Shot+2012-09-26+at+2.08.25+PM.png)
 
 ### Support vector machine
 This is used for 
