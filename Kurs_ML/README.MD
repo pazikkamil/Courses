@@ -3,10 +3,19 @@
 ## Supervised learning 
 We know the structure and outcome
 
+| Supervised learning |                          |
+|---------------------|--------------------------|
+| Methods             |classification , regression|
+
+
+![Image of classification]
+(https://octodex.github.com/images/yaktocat.png)
+
+
 ### Support vector machine
 This is used for 
 
-| Method | Result |
+| Supervised | Result |
 |--------|--------|
 
 ## Unsupervised learning
