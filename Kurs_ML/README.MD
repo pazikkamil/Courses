@@ -1,18 +1,32 @@
 # Machine learning cheat-sheets
 
 ## Supervised learning 
-We know the structure and outcome. We split data into training and test data
+We know the structure and outcome.
+We have bunch of examples and we know the correct answer.
+Key features are known, labels are also known.
+We split data into training and test data.
 
-* Deals with labeled data
+### Features
+We can represent features as x axis
+| Object | Features |
+|:------:|:--------:|
+| **Music** | tempo, genre, gender of voice |
+
+### Labels
+It can be Y axis 
+
 
 | Supervised learning |                             |
 |:---------------------:|:---------------------------|
 | **Methods**             |classification, regression, svm|
-| **Validation methods**  |cross validation                          |
-| **Algorithms**          |Decision tree, C4.5, K-NN,\ K-means,Hierarchical clust., Density based clust |
+| **Validation methods**  |cross validation                |
+| **Algorithms**          |Decision tree, C4.5, K-NN, Naive Bayes|
 
 ### Classification
 Classify labeled data
+
+
+#### Naive Bayes
 
 K-Nearest Neighbors - > A classification model
 
@@ -27,12 +41,6 @@ K-Nearest Neighbors - > A classification model
 Examples of classifications
 ![Image of classification]
 (http://3.bp.blogspot.com/-HFPsQbmRQZQ/UGNvH_t06jI/AAAAAAAAD_Y/G7XYOTVa2mM/s1600/Screen+Shot+2012-09-26+at+2.08.25+PM.png)
-
-![Image of knn]
-(https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm#/media/File:KnnClassification.svg)
-
-![video]
-(https://www.youtube.com/watch?v=hHuuebUCu2M)
 
 ### Regression
 Predicting trends using previous labeled data
@@ -59,8 +67,15 @@ We don't know much about our data, don't know the outcomes
 
 | Unsupervised learning |           |
 |:---------------------:|:----------|
-| **Methods**           |clustering |
+| **Methods**           |clustering, K-means,Hierarchical clust., Density based clust  |
 
 ### Clustering
 Finding patterns and groups in unlabeled data
 
+## Outliers
+
+### Removing outliers
+
+## Visualization of data
+
+### Scatterplot
