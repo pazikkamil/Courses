@@ -6,6 +6,7 @@ import numpy as np
 
 iris = load_iris()
 
+# type(iris) == bunches
 # check what we have
 iris.keys()
 iris['DESCR'][:193]
@@ -20,6 +21,9 @@ iris['DESCR'][:193]
 iris['data'][:4]
 # show rows till 4-th
 
+
+# check shape
+iris['target'].shape
 
 # it shuffles data using pseudo random num generator before spliting
 X_train, X_test, y_train, y_test = train_test_split(iris['data'], iris['target'], random_state=0)
@@ -37,6 +41,6 @@ X_new.shape
 # making predictions
 
 prediction = knn.predict(X_new)
-prediction
+
 
 iris['target_names'][prediction]
