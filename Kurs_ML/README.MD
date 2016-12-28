@@ -8,9 +8,11 @@ We split data into training and test data.
 
 ### Features
 We can represent features as x axis
+
 | Object | Features |
 |:------:|:--------:|
 | **Music** | tempo, genre, gender of voice |
+| **If meditate** | focus, calmness |
 
 ### Labels
 It can be Y axis 
@@ -28,7 +30,21 @@ Classify labeled data
 
 #### Naive Bayes
 
-K-Nearest Neighbors - > A classification model
+##### Bayes rule
+Thomas Bayes - he wanted to prove that God exists.
+
+* Sensitivity
+* Specificity
+
+#### Decisoin tree
+
+| What       | Description      |
+|:----------:|:-----------------|
+| **Root**   |                  |
+| **Leaf**   |                  |
+| **Node**   |                  |
+
+#### K-Nearest Neighbors - > A classification model
 
 > K-Nearest Neighbors - A classification model
 > -- <cite>[Big Data University][1]</cite>
@@ -76,6 +92,16 @@ Finding patterns and groups in unlabeled data
 
 ### Removing outliers
 
+## Error types
+
+| Error type | Description |
+|:----------:|:------------|
+| **Type 1** |             |
+
+## Over-fitting data
+If we use 100% percent of our data, to test model it would be 100% accurate.
+Which is wrong. We should use 10% data as a test set
+
 ## Visualization of data
 
-### Scatterplot
+### Scatter plot
