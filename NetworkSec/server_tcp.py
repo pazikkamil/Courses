@@ -1,3 +1,12 @@
+"""
+TCP three way handshake
+
+SYN
+SYN-ACK
+ACK
+FIN-ACK
+ACK
+"""
 import socket
 import threading
 
