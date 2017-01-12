@@ -1,0 +1,3 @@
+# VFS - virtual filesystem
+implements functions such as open(), write(). Which lunches proper
+functions for FS like
