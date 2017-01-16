@@ -4,8 +4,9 @@ ciag="jakis tekst"
 
 # Loops
 
+```bash
 for file in *.c; do echo ${file}; done
-
+```
 # If-s
 
 if ((${i} % 2)); then echo "some rest"; fi
@@ -54,3 +55,11 @@ zmienna=$(wc -l plik)
 
 * in comparision we use space bar
 * in assignment we dont use space bar
+=======
+
+## Greps
+grep -i -r "Cannot refresh"
+
+
+## Std out / Errors out
+find / -type f -iname "*.pem" 2> /dev/null
