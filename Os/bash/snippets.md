@@ -17,3 +17,9 @@ grep -i -r "Cannot refresh"
 
 ## Std out / Errors out
 find / -type f -iname "*.pem" 2> /dev/null
+
+
+## Comparision of string
+```bash
+if [ "${X}" == "abc" ]; then echo "ok"; fi;
+```
