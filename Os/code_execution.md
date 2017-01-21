@@ -8,3 +8,9 @@ bit in PSW register controls modes
 ## Device drivers (ring 2)
 
 ## User mode (ring 3)
+
+# Debugging
+
+cat /proc/4839/stack
+
+file cat /proc/1755/exe
