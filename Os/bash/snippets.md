@@ -69,3 +69,5 @@ find / -type f -iname "*.pem" 2> /dev/null
 ```bash
 if [ "${X}" == "abc" ]; then echo "ok"; fi;
 ```
+# Showing result of last command
+echo $?
