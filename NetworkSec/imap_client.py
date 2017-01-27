@@ -8,7 +8,7 @@ from imapclient import IMAPClient
 
 HOST = 'imap.gmail.com'
 USERNAME = 'user@domain.com'
-PASSWORD = 'passwdd'
+PASSWORD = 'passwwdd'
 ssl = True
 
 server = IMAPClient(HOST, use_uid=True, ssl=ssl)
