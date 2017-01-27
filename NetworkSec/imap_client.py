@@ -7,10 +7,6 @@ from __future__ import unicode_literals
 from imapclient import IMAPClient
 
 HOST = 'imap.gmail.com'
-USERNAME = 'kamil.pazik@instream.io'
-PASSWORD = 'instreaM2014!'
-
-HOST = 'imap.gmail.com'
 USERNAME = 'user@domain.com'
 PASSWORD = 'passwd'
 ssl = True
