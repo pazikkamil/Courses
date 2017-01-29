@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 read wejscie
 if [ "${wejscie}" == "y" -o "${wejscie} == "Y" ]
 then echo "YES"

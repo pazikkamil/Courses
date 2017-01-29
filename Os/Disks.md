@@ -5,8 +5,11 @@ Thiis is 512 bytes of storage device. Contains bootloader.
 **C**(ylinder)**H**(eader)**S**(ector). Type of partitioning.
 Have problem with larger partitions > 2TB
 
+
 - Just 4 partitions
 - 8 bit for partition type
+
+sudo dd if=/dev/zero of=/dev/disk2s1 bs=512 count=1
 
 ## GPT - Globally Unique Identifier Partition Table.
 LBA - type of partitioning
@@ -66,3 +69,6 @@ cat /proc/fs/ext4/sda1/options | grep xattr
 ## Tools
 
 - mount -a # mounts what reads from /etc/fstab
+
+## Sync
+sync
