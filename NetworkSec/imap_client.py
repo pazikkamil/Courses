@@ -74,3 +74,52 @@ def get_past_emails(folder="", from_date="", to_date="", from_person="", to_pers
                                                 data[b'FLAGS']))
 
 x = get_past_emails(b'INBOX',from_person='kamil.pazik@instream.io', from_date='01-JAN-2017')
+
+
+def get_past_emails_v2(self, folder="", from_date="", to_date="", from_person="", to_person=""):
+    """Get past emails from/to given date/person
+
+    Args:
+        folder:
+        from_date:
+        to_date:
+        from_person:
+        to_person:
+    Returns:
+        email messages ids
+    """
+
+    imap_query_start = u"("
+    imap_query_end = ")"
+    imap_query = ""
+
+    if not folder:
+        folder = b'INBOX'
+
+    select_info = self.select_folder(folder)
+
+    if from_person:
+        imap_query += 'FROM {}'.format(from_person)
+    if to_person:
+        imap_query += ' TO {}'.format(to_person)
+    if from_date:
+        imap_query += ' SINCE {}'.format(from_date)
+    if to_date:
+        imap_query += ' BEFORE {}'.format(to_date)
+
+    if len(imap_query) > 0:
+        imap_query = "{}{}{}".format(imap_query_start, imap_query, imap_query_end)
+        uids = self._connection.search(imap_query)
+    else:
+        uids = self._connection.search()
+
+    # raw_messages = self._connection.fetch(uids, 'BODY.PEEK[]')
+
+    if len(uids) > 0:
+        # fetch raw messages from server
+        raw_messages = self._connection.fetch(uids, 'BODY.PEEK[]')
+        # parse response
+        res = ((uid, email.message_from_string(msg['BODY[]'])) for uid, msg in raw_messages.items())
+        return res
+    else:
+        return iter([])
