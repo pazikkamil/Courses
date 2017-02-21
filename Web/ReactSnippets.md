@@ -9,4 +9,6 @@ var App = React.createClass({
        return(React.createElement("div", null, "Welcome to Adequate,
    Mike!"));
 } });
+
+React.render(React.createElement(App), document.body);
 ```
