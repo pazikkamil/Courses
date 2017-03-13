@@ -12,3 +12,6 @@ sudo netstat -plnt
 # tcp        0      0 0.0.0.0:9999            0.0.0.0:*               LISTEN      3151/python3.5
 
 sudo lsof
+
+lsof -i tcp
+lsof -p PID
