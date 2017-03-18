@@ -12,6 +12,8 @@ fuser -u -v /dev/urandom
 iotop -o
 iostat -p ALL #shows usage of disks
 ```
-
-
+# Top RAM usage
+```bash
+ps aux | tail -n +2 | sort -rnk 4
+```
 
