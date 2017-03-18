@@ -1,1 +1,7 @@
 **.idea
+**.out
+*.o
+*.ko
+*.so
+*.obj
+*core
