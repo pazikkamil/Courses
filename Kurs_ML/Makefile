@@ -5,7 +5,16 @@ ifneq ($(PYVERSION), 3)
 	PYTHON = python3
 endif
 
-all:
+all: activate
+
+venv:
 	mkdir $(FOLDER)
 	$(PYTHON) -m venv $(FOLDER) 
+
+activate: venv
+	bash -c "source venv/bin/activate; pip install -r requirements.txt"
+
+clean:
+	rm -rf $(FOLDER)
+
 
