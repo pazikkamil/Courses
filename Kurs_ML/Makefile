@@ -5,14 +5,17 @@ ifneq ($(PYVERSION), 3)
 	PYTHON = python3
 endif
 
-all: activate
+all: jupyter_extend
 
 venv:
 	mkdir $(FOLDER)
 	$(PYTHON) -m venv $(FOLDER) 
 
 activate: venv
-	bash -c "source venv/bin/activate; pip install -r requirements.txt"
+	bash -c "source $(FOLDER)/bin/activate; pip install -r requirements.txt"
+
+jupyter_extend: activate
+	bash -c "source $(FOLDER)/bin/activate; jupyter nbextension enable --py --sys-prefix widgetsnbextension"
 
 clean:
 	rm -rf $(FOLDER)
