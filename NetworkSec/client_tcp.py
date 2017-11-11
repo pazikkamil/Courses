@@ -1,8 +1,8 @@
 import socket
 
-target_host = "www.google.com"
+target_host = "google.pl"
 target_port = 80
-banner = "GET / HTTP/1.1\r\nHost: google.com\r\n\r\n"
+banner = "GET / HTTP/1.1\r\nHost: www.google.pl\n\r\n"
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # AF_INET - ipv4, SOCK_STREAM is for TCP
