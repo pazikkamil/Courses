@@ -1,3 +1,6 @@
-# apt-get 
+# APT
 
-- apt-get --just-print upgrade
+## looking for installed files
+```bash
+apt-file list zsh
+```
