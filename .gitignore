@@ -6,3 +6,4 @@
 *.so
 *.obj
 *core
+*.ipynb_checkpoints
