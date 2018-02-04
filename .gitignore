@@ -6,3 +6,4 @@
 *.obj
 *core
 *.ipynb_checkpoints
+venv
